@@ -54,10 +54,10 @@ def main():
     logging.basicConfig(level=logging.INFO)
 
     # Configuration
-    data_dir = Path("/kaggle/working/my-tabllm/datasets")
+    data_dir = Path("/kaggle/input/tabllm-repo/my-tabllm/datasets")
     data_dir = data_dir / args.dataset
     temp_output = args.dataset
-    output_dir = Path("/kaggle/working/my-tabllm/datasets_serialized") / temp_output
+    output_dir = Path("/kaggle/working/") / temp_output
     if not args.debug:
         if os.path.exists(output_dir) is False:
             os.mkdir(output_dir)
