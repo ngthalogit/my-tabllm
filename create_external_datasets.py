@@ -59,7 +59,8 @@ def main():
     temp_output = args.dataset
     output_dir = Path("/kaggle/working/my-tabllm/datasets_serialized") / temp_output
     if not args.debug:
-        os.mkdir(output_dir)
+        if os.path.exists(output_dir) is False:
+            os.mkdir(output_dir)
     logger.info(f"Generate dataset {args.dataset}.")
 
     if not args.list and args.permuted:
