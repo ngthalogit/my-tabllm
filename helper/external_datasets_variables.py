@@ -727,27 +727,27 @@ template_kc2_list = "- McCabe's line count of code: ${loc}\n" \
                          "- Halstead's total operands: ${total_Opnd}\n" \
                          '- flow graph: ${branchCount}'
 template_kc2_list_permuted = "- McCabe's line count of code: ${v}\n" \
-                         '- McCabe "cyclomatic complexity": ${l}\n' \
-                         '- McCabe "essential complexity: ${lOCode}\n' \
-                         '- McCabe "design complexity: ${uniq_Op}\n' \
+                         '- McCabe "cyclomatic complexity": ${b}\n' \
+                         '- McCabe "essential complexity: ${lOComment}\n' \
+                         '- McCabe "design complexity: ${lOBlank}\n' \
                          '- Halstead total operators and operands: ' \
-                         '${t}\n' \
-                         '- Halstead "volume": ${n}\n' \
-                         '- Halstead "program length": ${lOComment}\n' \
-                         '- Halstead "difficulty": ${total_Opnd}\n' \
-                         '- Halstead "intelligence": ${uniq_Opnd}\n' \
-                         '- Halstead "effort": ${b}\n' \
-                         '- Halstead: ${lOCodeAndComment}\n' \
+                         '${lOCodeAndComment}\n' \
+                         '- Halstead "volume": ${iv_g}\n' \
+                         '- Halstead "program length": ${total_Op}\n' \
+                         '- Halstead "difficulty": ${uniq_Opnd}\n' \
+                         '- Halstead "intelligence": ${v_g}\n' \
+                         '- Halstead "effort": ${uniq_Op}\n' \
+                         '- Halstead: ${total_Opnd}\n' \
                          "- Halstead's time estimator: ${loc}\n" \
-                         "- Halstead's line count: ${v_g}\n" \
-                         "- Halstead's count of lines of comments: ${iv_g}\n" \
+                         "- Halstead's line count: ${t}\n" \
+                         "- Halstead's count of lines of comments: ${i}\n" \
                          "- Halstead's count of count of blank lines: ${l}\n" \
                          "- Halstead's count of lines of code and comments: ${d}\n" \
-                         "- Halstead's unique operators: ${branchCount}\n" \
-                         "- Halstead's unique operands: ${n}\n" \
-                         "- Halstead's total operators: ${ev_g}\n" \
+                         "- Halstead's unique operators: ${lOCode}\n" \
+                         "- Halstead's unique operands: ${ev_g}\n" \
+                         "- Halstead's total operators: ${branchCount}\n" \
                          "- Halstead's total operands: ${e}\n" \
-                         '- flow graph: ${i}'
+                         '- flow graph: ${n}'
 template_config_kc2_list_permuted = template_config_kc2_list
 template_kc2_list_values = "${loc}\n" \
                          '${v_g}\n' \
